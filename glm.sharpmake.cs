@@ -7,7 +7,7 @@ public class GlmProject : BaseCppProject
     public GlmProject()
     {
         Name = "glm";
-        SourceRootPath = @"[project.SharpmakeCsPath]\Source";
+        SourceRootPath = @"[project.SharpmakeCsPath]\src";
         AddTargets(TargetUtil.DefaultTarget);
     }
 
@@ -21,6 +21,6 @@ public class GlmProject : BaseCppProject
         conf.Output = Project.Configuration.OutputType.Lib;
         conf.TargetPath = @"[project.SharpmakeCsPath]\Out\Bin\[target.Platform]-[target.Optimization]";
         conf.IntermediatePath = @"[project.SharpmakeCsPath]\Out\Intermediate\[target.Platform]-[target.Optimization]";
-        conf.IncludePaths.Add(@"[project.SharpmakeCsPath]\Source");
+        conf.IncludePaths.Add(@"[project.SharpmakeCsPath]\src");
     }
 }
