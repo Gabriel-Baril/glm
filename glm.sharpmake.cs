@@ -6,7 +6,7 @@ public class HdnCodeExternalGlmProject : BaseCppProject
 {
     public HdnCodeExternalGlmProject()
     {
-        Name = "hdn.code.external.glm";
+        Name = "dm.code.external.glm";
         SourceRootPath = @"[project.SharpmakeCsPath]\src";
         AddTargets(TargetUtil.DefaultTarget);
     }
